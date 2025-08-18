@@ -28,25 +28,25 @@ toggleBtn.addEventListener("click", () => {
 //PROJETOS
   const projetos = [
     {
-      img: "assets/projeto1.png",
-      alt: "Projeto 1",
-      titulo: "Sistema de Pedidos",
-      descricao: "Aplicação para controle de pedidos com dashboard interativo.",
-      link: "https://github.com/seuusuario/projeto1"
+      img: "assets/api1.jpg",
+      alt: "API 1: Service Desk",
+      titulo: "API 1: Service Desk",
+      descricao: "Aplicação para prestar assessoria para solucionar problemas integrado no ambiente de tecnologia da informação",
+      link: "https://github.com/MariMiks/API-DSM-ServiceDesk"
     },
     {
-      img: "assets/projeto2.png",
-      alt: "Projeto 2",
-      titulo: "Previsão de Vendas",
-      descricao: "Modelo com Prophet para previsão de vendas mensais.",
-      link: "https://github.com/seuusuario/projeto2"
+      img: "assets/api2.png",
+      alt: "API 2: Sistema HERMEZ",
+      titulo: "API 2: Sistema HERMEZ",
+      descricao: "Gerenciamento de Chamados de Serviços.",
+      link: "https://github.com/MariMiks/API_2-Hermez"
     },
     {
-      img: "assets/projeto3.png",
-      alt: "Projeto 3",
-      titulo: "Automação no Excel",
-      descricao: "Script em Python para integração com SharePoint.",
-      link: "https://github.com/seuusuario/projeto3"
+      img: "assets/api3.png",
+      alt: "API 3: CTRL A",
+      titulo: "API 3: CTRL A",
+      descricao: "Aplicação para manuseio dos ativos de uma empresa.",
+      link: "https://github.com/MariMiks/API3-CtrlA"
     }
   ];
 
