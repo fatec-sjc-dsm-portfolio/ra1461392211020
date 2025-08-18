@@ -1,108 +1,125 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Mariana Kuroshima</title>
-  <link rel="icon" href="assets/logo-light.png" type="image/png">
-  <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Mariana Kuroshima</title>
+    <link rel="icon" href="assets/logo-light.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
+
 <body>
-  <!-- Header / Navbar -->
-  <header>
-    <nav class="navbar">
-      <div class="logo"><img src="assets/logo-dark.png" alt="MIKS" id="logo-img"></div>
-      <ul class="nav-links">
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#voluntariado">Voluntariado</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-      <button id="toggle-theme">🌙</button>
-    </nav>
-  </header>
+    <!-- Header / Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo"><img src="assets/logo-dark.png" alt="MIKS" id="logo-img"></div>
+            <ul class="nav-links">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#voluntariado">Voluntariado</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <button id="toggle-theme">🌙</button>
+        </nav>
+    </header>
 
     <section class="hero">
         <h1>Mariana Izumi Kuroshima da Silva</h1>
         <h2>Desenvolvedora Full-Stack | Compradora na Ericsson</h2>
     </section>
 
-  <!-- Sobre mim -->
-  <section id="sobre" class="section">
-      <div class="sobre-container">
-          <img src="assets/foto-perfil.jpg" alt="Minha foto" class="perfil">
-          <div>
-          <h2>Sobre mim</h2>
-        <p>
-          Sou estudante de <strong>Desenvolvimento de Software Multiplataforma (DSM)</strong> na FATEC prof. Jessen Vidal - São José dos Campos, atualmente estou cursando o último semestre do curso.
-        Trabalho atualmente na <strong>Ericsson</strong> no setor de Compras e busco unir meus conhecimentos em desenvolvimento de software
-        para otimizar processos internos e criar soluções digitais eficientes para minha área.
-        </p>
-        <div class="badges">
-          <span class="badge">JavaScript</span>
-          <span class="badge">TypeScript</span>
-          <span class="badge">Python</span>
-          <span class="badge">Microsoft Power Platform</span>
+    <!-- Sobre mim -->
+    <section id="sobre" class="section">
+        <div class="sobre-container">
+            <img src="assets/foto-perfil.jpg" alt="Minha foto" class="perfil">
+            <div>
+                <h2>Sobre mim</h2>
+                <p>
+                    Sou estudante de <strong>Desenvolvimento de Software Multiplataforma (DSM)</strong> na FATEC prof.
+                    Jessen Vidal - São José dos Campos, atualmente estou cursando o último semestre do curso.
+                    Trabalho atualmente na <strong>Ericsson</strong> no setor de Compras e busco unir meus conhecimentos
+                    em desenvolvimento de software
+                    para otimizar processos internos e criar soluções digitais eficientes para minha área.
+                </p>
+                <div class="badges">
+                    <span class="badge">JavaScript</span>
+                    <span class="badge">TypeScript</span>
+                    <span class="badge">Python</span>
+                    <span class="badge">Microsoft Power Platform</span>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-<!-- Projetos -->
-<section id="projetos" class="section">
-  <h2>Projetos</h2>
+    <!-- Projetos -->
+    <section id="projetos" class="section">
+        <h2>Projetos</h2>
 
-  <!-- Container do carrossel -->
-  <div class="carousel-container">
-    <div class="carousel" id="carousel"></div>
-    <div class="carousel-dots" id="carousel-dots"></div>
-  </div>
+        <!-- Container do carrossel -->
+        <div class="carousel-container">
+            <div class="carousel" id="carousel"></div>
+            <div class="carousel-dots" id="carousel-dots"></div>
+        </div>
 
-  <!-- Template do card -->
-  <template id="card-template">
-    <div class="card">
-      <img src="" alt="">
-      <h3></h3>
-      <p></p>
-      <a href="" target="_blank">Ver no GitHub</a>
-    </div>
-  </template>
-</section>
+        <!-- Template do card -->
+        <template id="card-template">
+            <div class="card">
+                <img src="" alt="">
+                <h3></h3>
+                <p></p>
+                <a href="" target="_blank">Ver no GitHub</a>
+            </div>
+        </template>
+    </section>
 
 
-  <!-- Voluntariado -->
-  <section id="voluntariado" class="section">
-    <h2>Voluntariado</h2>
-    <div class="vol-grid">
-      <div class="vol-item">
-        <h3>Rotaract</h3>
-        <img alt="Rotaract">
-      </div>
-      <div class="vol-item">
-        <h3>Hamburgada do Bem</h3>
-        <img alt="Hamburgada do Bem">
-      </div>
-      <div class="vol-item">
-        <h3>Mahikari Tai</h3>
-        <img alt="Mahikari Tai">
-      </div>
-    </div>
-  </section>
+    <!-- Voluntariado -->
+    <section id="voluntariado" class="section">
+        <h2>Voluntariado</h2>
+        <div class="vol-grid">
+            <div class="vol-item">
+                <img src="assets/rotaract.jpg" alt="Rotaract">
+                <div class="overlay-text">
+                    <h3>Rotaract</h3>
+                    <p>Grupo de jovens adultos de 18 a 30 anos para desenvolver habilidades de liderança, fazer trabalho voluntário e promover o companheirismo através do serviço. Os clubes Rotaract são afiliados a clubes Rotary locais e trabalham em conjunto em projetos de serviço comunitário e desenvolvimento profissional. </p>
+                </div>
+            </div>
+            <div class="vol-item">
+                <img src="assets/hamburgada.jpg" alt="Hamburgada do Bem">
+                <div class="overlay-text">
+                    <h3>Hamburgada do Bem</h3>
+                    <p>Projeto de amigos que distribuem hambúrgueres e muita recreação em comunidades carentes. O melhor dia do ano.</p>
+                </div>
+            </div>
+            <div class="vol-item">
+                <img src="assets/mahikari-tai.jpg" alt="Mahikari Tai">
+                <div class="overlay-text">
+                    <h3>Mahikari Tai</h3>
+                    <p>Grupo de jovens dentro da Mahikari, uma organização religiosa japonesa que pratica a purificação espiritual através da irradiação da Luz Divina, chamada Okiyome.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Contato -->
-  <section id="contato" class="section">
-    <h2>Contatos principais</h2>
-    <p>Me siga em <strong><a href="https://marimiks.github.io/RocketLinks-MaratonaExplorer/">todas as redes</a></strong>💜</p>
-    <div class="contato-links">
-        <a href="https://github.com/MariMiks" target="_blank"><img src="assets/github-icon-light.png" id="git-icon"> GitHub</a>
-        <a href="https://linkedin.com/in/mariana-izumi" target="_blank"><img src="assets/linkedin-icon-light.png" id="linkedin-icon"> LinkedIn</a>
-        <a href="mailto:mariana.izumiks@gmail.com"><img src="assets/email-icon-light.png" id="email-icon"> Email</a>
-    </div>
-  </section>
+    <!-- Contato -->
+    <section id="contato" class="section">
+        <h2>Contatos principais</h2>
+        <p>Me siga em <strong><a href="https://marimiks.github.io/RocketLinks-MaratonaExplorer/">todas as
+                    redes</a></strong>💜</p>
+        <div class="contato-links">
+            <a href="https://github.com/MariMiks" target="_blank"><img src="assets/github-icon-light.png" id="git-icon">
+                GitHub</a>
+            <a href="https://linkedin.com/in/mariana-izumi" target="_blank"><img src="assets/linkedin-icon-light.png"
+                    id="linkedin-icon"> LinkedIn</a>
+            <a href="mailto:mariana.izumiks@gmail.com"><img src="assets/email-icon-light.png" id="email-icon"> Email</a>
+        </div>
+    </section>
 
-  <footer>
-    <p>Feito com 💜 por MIKS</p>
-  </footer>
+    <footer>
+        <p>Feito com 💜 por MIKS</p>
+    </footer>
 </body>
+
 </html>
