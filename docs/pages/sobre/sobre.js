@@ -27,10 +27,8 @@ toggleBtn.addEventListener("change", () => {
 const conteudo = document.querySelector('.conteudo');
     const textos = {
         Eu: `
-            Sou uma pessoa focada, organizada e motivada por aprender continuamente.
-            No trabalho, gosto de clareza, estrutura e desafios que realmente gerem impacto.
-            Ao mesmo tempo, valorizo leveza e autenticidade tanto na forma como me comunico
-            quanto na forma como colaboro.
+            Sou uma pessoa focada, organizada e motivada por aprender continuamente. No trabalho, gosto de clareza, estrutura e desafios que realmente gerem impacto. Tenho facilidade em entender processos, identificar melhorias e transformar necessidades em soluções práticas.
+            Ao mesmo tempo, valorizo leveza e autenticidade tanto na forma como me comunico quanto na forma como colaboro. Acredito em ambientes onde as pessoas se sintam à vontade para trocar ideias, aprender juntas e construir resultados de maneira consistente. Gosto de unir lógica e empatia: criar soluções eficientes sem perder a sensibilidade humana que existe por trás de cada processo, ferramenta ou decisão.
         `,
         ForaTrabalho: `
             Quando não estou mergulhada em projetos, geralmente estou assistindo séries,

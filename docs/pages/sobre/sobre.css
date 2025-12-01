@@ -1,7 +1,81 @@
-/*-------------- SOBRE MIM --------------*/
-.badges .ativo{
-    background: #8c088a;
-    color: white;
+/* SOBRE — layout linha: imagem à esquerda, texto à direita */
+.sobre-container {
+  display: flex;
+  gap: 36px;
+  align-items: flex-start;
+  justify-content: center;
+  /* impedir quebra em desktop; permitirá quebra apenas em telas pequenas via media query */
+  flex-wrap: nowrap;
+}
+
+/* imagem à esquerda */
+.sobre-container img.perfil {
+  flex: 0 0 48%;        /* não cresce, não encolhe muito, ocupa ~48% */
+  max-width: 220px;     /* limite visual */
+  border-radius: 20px;
+  object-fit: cover;
+  display: block;
+}
+
+/* área de texto à direita */
+.sobre-container > div {
+  flex: 1 1 48%;        /* ocupa o restante do espaço */
+  min-width: 260px;     /* evita colapso extremo do texto */
+}
+
+/* badges e conteúdo */
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.badge {
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: #dcdcdc;
+  color: #333;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.badge:hover {
+  background: #b15fb1;
+  color: #fff;
+}
+
+.badge.ativo {
+  background: #8c088a;
+  color: #fff;
+}
+
+/* texto principal */
+#sobre .conteudo {
+  line-height: 1.6;
+  color: var(--text);
+  margin-top: 8px;
+}
+
+/* RESPONSIVIDADE — em telas pequenas empilha verticalmente */
+@media (max-width: 880px) {
+  .sobre-container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+  }
+
+  .sobre-container img.perfil {
+    width: 70%;
+    flex: 0 0 auto;
+    max-width: 320px;
+  }
+
+  .sobre-container > div {
+    width: 100%;
+  }
 }
 
 
