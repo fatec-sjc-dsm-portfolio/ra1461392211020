@@ -47,7 +47,7 @@ toggleBtn.addEventListener("change", () => {
       descricao: "Projeto do primeiro semestre de Desenvolvimento de Software Multiplataforma da FATEC que curso atualmente. Consiste em um interface que presta assessoria para solucionar problemas integrado no ambiente de tecnologia da informação.",
       tags: ["HTML", "CSS", "JavaScript", "Python", "Bootstrap", "MySQL", "SQLAlchemy", "Trello", "Git"],
       link: "https://github.com/MariMiks/API-DSM-ServiceDesk",
-      atuacao: "Primeiro projeto semestral com um grupo novo. Primeiro contato que tive com a estrutura SCRUM e metodologia ágeis para o desenvolvimento de aplicações. Primeira experiência exercendo a posição de Product Owner (PO). Foram vários primeiros desafios, mas que me ajudaram a entender e melhorar o meu desenvolvimento pessoal e técnico."
+      atuacao: "Minha primeira experiência em um projeto acadêmico de desenvolvimento e também meu primeiro contato com metodologias ágeis. Atuei como Product Owner, aprendendo a organizar demandas, acompanhar o time e transformar necessidades do cliente em funcionalidades claras. Além disso, foi meu primeiro contato com várias tecnologias usadas no projeto, o que me desafiou bastante tecnicamente. Mesmo com tantas novidades ao mesmo tempo, consegui conduzir o grupo, organizar prioridades e manter as entregas alinhadas ao objetivo do sistema."
     },
     {
       categoria: "web",
@@ -58,7 +58,7 @@ toggleBtn.addEventListener("change", () => {
       descricao: "Projeto do segundo semestre de Desenvolivimento de Software Multiplataforma da FATEC que curso atualmente. Consiste em desenvolver um sistema de Gerenciamento de Chamados de Serviços. Este sistema deve ser capaz de fornecer informações sobre disponibilização de funcionalidades de planejamento, de acompanhar e controlar atendimentos de chamados de serviços, além de criar e exibir relatórios analíticos",
       tags: ["HTML", "CSS", "JavaScript", "MySQL", "NodeJS", "React", "Jira", "Git"],
       link: "https://github.com/MariMiks/API_2-Hermez",
-      atuacao: "Focada no time de desenvolvimento no backend e banco de dados do projeto."
+      atuacao: "Fiz parte exclusivamente do Dev Team, atuando principalmente no Front-end, mas contribuindo também no Back-end e um pouco na camada de dados. Esse projeto foi importante para o meu crescimento, pois trabalhei com um time completamente diferente do semestre anterior. Isso me ajudou a desenvolver tanto habilidades técnicas quanto pessoais, aprendendo a me adaptar a novos perfis, ritmos e formas de colaboração."
     },
     {
       categoria: "web",
@@ -69,7 +69,7 @@ toggleBtn.addEventListener("change", () => {
       descricao: "Em conjunto com a Youtan realizamos uma aplicação web que visa facilitar o manuseio dos ativos tangíveis e intangíveis de uma empresa, sendo acompanhar quem atualmente possui o ativo, manutenções do ativo e relatórios com insights relevantes para um administrador do sistema.",
       tags: ["TypeSCript", "Java", "Spring", "PostgresSQL", "Supabase", "Figma", "Jira", "Git"],
       link: "https://github.com/MariMiks/API3-CtrlA",
-      atuacao: "Neste semestre houve uma grande mudança na estrutura do grupo de alunos que participo, tivemos a saída de alguns e a integração de outros, isto com certeza impactou no nosso progresso. Ao primeiro momento estávamos todos tentando nos adaptar e se conhecer, com isso sugeri em vários momentos durante o planejamento para tentarmos levantar pontos positivos e negativos de experências passadas dos dois grupos e compactar estas ideias. Como estávamos preocupados e bem ansiosos de como seria o nosso desempenho, na primeira sprint tivemos uma entrega bem satisfatória. Porém na segunta e terceira sprint, descobrimos que habilidades técnicas não tínhamos grandes problemas mas sim em soft skills. Com esta observação, procuramos conversar em cada sprint review para melhorarmos, nestas reuniões me expressei com todos os pontos que havia observado e assim tentando também desenvolver individualmente uma melhor confiança na equipe e não centralizar as tarefas. Com muito esforço e resiliência conseguimos na quarta sprint obter uma entrega bem satisfatória e uma melhora bem significativa referente as outras entregas."
+      atuacao: "O semestre começou com uma grande mudança no time, com entrada e saída de integrantes, o que impactou bastante nossa adaptação e ritmo. Sugeri discussões sobre experiências anteriores para alinharmos expectativas e estruturarmos boas práticas desde o início. Apesar da ansiedade coletiva, conseguimos uma primeira entrega forte, mas percebemos nas sprints seguintes que nossos desafios eram mais de comunicação e soft skills do que técnicos. A cada sprint review, compartilhei meus pontos de observação e ajudei o time a se reorganizar, fortalecendo confiança e distribuindo responsabilidades sem centralização. Com esforço e resiliência, conquistamos uma última sprint muito mais sólida e consistente, mostrando nossa evolução em grupo."
     },
     {
       categoria: "web",
@@ -80,7 +80,7 @@ toggleBtn.addEventListener("change", () => {
       descricao: "Em conjunto com a TecSus realizamos uma aplicação web que visa a coleta de dados de sensores (direção e velocidade do vento, índice pluviométrico, umidade, temperatura e pressão), tratá‑los e exibi‑los em um portal com dashboards e relatórios. Geração de alertas: ferramenta de monitoramento ambiental para lidar com desastres naturais. Recurso didático: a demonstração dos conceitos matemáticos usados nos cálculos dos parâmetros.",
       tags: ["TypeSCript", "Java", "Spring", "C++", "PostgresSQL", "Supabase", "Figma", "Taiga", "Git", "DevOps"],
       link: "https://github.com/MariMiks/API_4",
-      atuacao: ""
+      atuacao: "Voltei a atuar como Product Owner, desta vez de forma muito mais tranquila e estruturada. Consegui organizar bem as tarefas do time e manter o fluxo de trabalho claro. Além do papel de PO, também contribuí como desenvolvedora front-end e permaneci como uma espécie de backup geral, auxiliando os demais times sempre que precisavam. Este projeto também marcou meu primeiro contato com DevOps — fui responsável pela documentação e integração dos processos, o que foi uma experiência nova e extremamente enriquecedora."
     },
     {
       categoria: "mobile",
@@ -91,7 +91,7 @@ toggleBtn.addEventListener("change", () => {
       descricao: "Plataforma que possibilite a criação e gerenciamento de agentes de Inteligência Artificial focados em atendimento interno. Esses agentes serão personalizados para responder questionamentos específicos, enquanto um sistema de permissões garante que cada usuário só tenha acesso aos agentes autorizados. Além disso, o projeto envolve a integração com um banco de dados na nuvem para armazenar o histórico de interações e a criação de um aplicativo móvel que facilite a comunicação via chat, entregando respostas rápidas e precisas às dúvidas dos usuários.",
       tags: ["Python", "React Native", "Swagger", "PostgresSQL", "Supabase", "AWS", "Figma", "Shortcut", "Git"],
       link: "https://github.com/MariMiks/API_5",
-      atuacao: ""
+      atuacao: "Este foi um dos projetos mais conceitualmente desafiadores, principalmente pela complexidade da ideia apresentada pelo cliente. Fiquei focada na funcionalidade do chat, trabalhando no tratamento das respostas, integração e refinamento do comportamento da aplicação. Foi um desenvolvimento sensível, que exigiu bastante cuidado com detalhes. Apesar dos desafios, o resultado final ficou muito intuitivo e agradável de usar, com uma experiência fluida para o usuário."
     },
     {
       categoria: "web",
@@ -102,7 +102,7 @@ toggleBtn.addEventListener("change", () => {
       descricao: "Sistema de busca semântica, a partir da dataset fornecido pelo cliente Dom Rock, capaz de interpretar e responder perguntas dos usuários por meio de um agente de inteligência artificial integrado ao chat interativo. Além disso, deverá ter a funcionalidade de enviar um boletim, baseado no modelo fornecido pelo cliente, gerado pela ia com os dados de um dado período do dataset diretamente a um email.",
       tags: ["Python", "Flutter", "Swagger", "PostgresSQL", "Supabase", "AWS", "Figma", "Shortcut", "Git"],
       link: "https://github.com/MariMiks/API_6",
-      atuacao: ""
+      atuacao: "Atuei no Dev Team, contribuindo principalmente no Back-end, onde fui responsável pela funcionalidade de envio automático de relatórios, desde as rotas até a sincronização para envio por e-mail. No Front-end, trabalhei na responsividade e na padronização visual das páginas, garantindo consistência e boa experiência. Também fui responsável por toda a parte de segurança, configurando regras de acesso e garantindo que páginas administrativas não fossem exibidas para usuários comuns."
     }
   ];
 
