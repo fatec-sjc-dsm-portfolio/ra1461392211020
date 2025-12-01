@@ -4,45 +4,54 @@ const gitIcon = document.getElementById("git-icon");
 const linkedinIcon = document.getElementById("linkedin-icon");
 const emailIcon = document.getElementById("email-icon");
 
-toggleBtn.addEventListener("click", () => {
+// Carrega preferência salva
+if (localStorage.getItem("theme") === "dark") {
+  document.body.classList.add("dark");
+  toggleBtn.checked = true;
+  logoImg.src = "assets/logo-light.png";
+  gitIcon.src = "assets/github-icon-dark.png";
+  linkedinIcon.src = "assets/linkedin-icon-dark.png";
+  emailIcon.src = "assets/email-icon-dark.png";
+}
+
+// Evento do toggle
+toggleBtn.addEventListener("change", () => {
   document.body.classList.toggle("dark");
-  toggleBtn.textContent = document.body.classList.contains("dark") ? "☀️" : "🌙";
 
-  if (document.body.classList.contains("dark")){
-    toggleBtn.textContent = "☀️"
-    logoImg.src = "assets/logo-light.png"
-    gitIcon.src = "assets/github-icon-dark.png"
-    linkedinIcon.src = "assets/linkedin-icon-dark.png"
-    emailIcon.src = "assets/email-icon-dark.png"
-
-  } else{
-    toggleBtn.textContent = "🌙"
-    logoImg.src = "assets/logo-dark.png"
-    gitIcon.src = "assets/github-icon-light.png"
-    linkedinIcon.src = "assets/linkedin-icon-light.png"
-    emailIcon.src = "assets/email-icon-light.png"
+  if (document.body.classList.contains("dark")) {
+    logoImg.src = "assets/logo-light.png";
+    gitIcon.src = "assets/github-icon-dark.png";
+    linkedinIcon.src = "assets/linkedin-icon-dark.png";
+    emailIcon.src = "assets/email-icon-dark.png";
+    localStorage.setItem("theme", "dark");
+  } else {
+    logoImg.src = "assets/logo-dark.png";
+    gitIcon.src = "assets/github-icon-light.png";
+    linkedinIcon.src = "assets/linkedin-icon-light.png";
+    emailIcon.src = "assets/email-icon-light.png";
+    localStorage.setItem("theme", "light");
   }
-
 });
 
+
 //PROJETOS
-  const projetos = [
+  const projetosDestaque = [
     {
-      img: "assets/api1.jpg",
-      alt: "API 1: Service Desk",
-      titulo: "API 1: Service Desk",
-      descricao: "Aplicação para prestar assessoria para solucionar problemas integrado no ambiente de tecnologia da informação",
-      link: "https://github.com/MariMiks/API-DSM-ServiceDesk"
+      img: "./assets/api6.png",
+      alt: "API 6: Clara",
+      titulo: "API 6: Clara",
+      descricao: "Sistema de busca semântica, a partir da dataset fornecido pelo cliente Dom Rock, capaz de interpretar e responder perguntas dos usuários por meio de um agente de inteligência artificial integrado ao chat interativo. Além disso, deverá ter a funcionalidade de enviar um boletim, baseado no modelo fornecido pelo cliente, gerado pela ia com os dados de um dado período do dataset diretamente a um email.",
+      link: "https://github.com/MariMiks/API_6"
     },
     {
-      img: "assets/api2.png",
-      alt: "API 2: Sistema HERMEZ",
-      titulo: "API 2: Sistema HERMEZ",
-      descricao: "Gerenciamento de Chamados de Serviços.",
-      link: "https://github.com/MariMiks/API_2-Hermez"
+      img: "./assets/api5.jpg",
+      alt: "API 5: Omni",
+      titulo: "API 5: Omni",
+      descricao: "Plataforma que possibilite a criação e gerenciamento de agentes de Inteligência Artificial",
+      link: "https://github.com/MariMiks/API_5"
     },
     {
-      img: "assets/api3.png",
+      img: "./assets/api3.png",
       alt: "API 3: CTRL A",
       titulo: "API 3: CTRL A",
       descricao: "Aplicação para manuseio dos ativos de uma empresa.",
@@ -57,7 +66,7 @@ toggleBtn.addEventListener("click", () => {
   let currentIndex = 0;
 
   // Renderiza os cards
-  projetos.forEach((proj, index) => {
+  projetosDestaque.forEach((proj, index) => {
     const card = template.content.cloneNode(true);
     card.querySelector("img").src = proj.img;
     card.querySelector("img").alt = proj.alt;

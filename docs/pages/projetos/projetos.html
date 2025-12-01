@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos - Mariana Kuroshima</title>
+    <link rel="icon" href="../../assets/logo-light.png" type="image/png">
+    <link rel="stylesheet" href="./projetos.css">
+    <link rel="stylesheet" href="../../style.css">
+    <script defer src="./projetos.js"></script>
+</head>
+
+<body>
+    <!-- Header / Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo"><img src="../../assets/logo-dark.png" alt="MIKS" id="logo-img"></div>
+            <ul class="nav-links">
+                <li><a href="../../index.html">Início</a></li>
+                <li><a href="../sobre/sobre.html">Sobre</a></li>
+                <li><a href="">Projetos</a></li>
+                <li><a href="../contatos/contatos.html">Contato</a></li>
+            </ul>
+            <div class="toggle-container">
+                <input type="checkbox" id="toggle-theme" />
+                <label for="toggle-theme" class="toggle">
+                    <span class="ball"></span>
+                    <span class="icon moon">🌙</span>
+                    <span class="icon sun">🌞</span>
+                </label>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- Projetos -->
+    <section id="projetos" class="section">
+        <h2>Projetos</h2>
+
+        <div class="projetos-filtroBusca">
+            <!-- Barra de busca -->
+            <div class="projetos-search">
+                <input type="text" id="searchInput" placeholder="Buscar projetos...">
+            </div>
+    
+            <!-- Filtros -->
+            <div class="projetos-filtros">
+                <button class="filtro active" data-filter="todos">Todos</button>
+                <button class="filtro" data-filter="web">Web</button>
+                <button class="filtro" data-filter="mobile">Mobile</button>
+                <button class="filtro" data-filter="automacao">Automação</button>
+            </div>
+        </div>
+
+        <!-- GRID DE PROJETOS -->
+        <div class="projetos-grid" id="grid">
+
+            <!-- TEMPLATE DO CARD -->
+            <template id="card-template">
+                <div class="projeto-card" data-category="">
+                    <img class="projeto-img">
+                    <div class="projeto-content">
+                        <span class="tag tipo"></span>
+                        <span class="tag destaque hide">Destaque</span>
+                        <h3></h3>
+                        <p class="descricao"></p>
+                        <div class="tags"></div>
+                        <a class="btn-codigo" target="_blank">Ver Código</a>
+                    </div>
+                </div>
+            </template>
+
+        </div>
+    </section>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="modal-close">&times;</span>
+
+            <img id="modal-img">
+
+            <h2 id="modal-titulo"></h2>
+            <p id="modal-descricao"></p>
+
+            <h3>Tecnologias utilizadas:</h3>
+            <div id="modal-tags" class="tags"></div>
+
+            <h3>Minha atuação no projeto:</h3>
+            <p id="modal-atuacao"></p>
+
+            <a id="modal-link" class="btn-codigo" target="_blank">Ver Código</a>
+        </div>
+    </div>
+
+    <!-- Contato -->
+    <section id="contato" class="section">
+        <h2>Contatos principais</h2>
+        <p>Me siga em <strong><a href="https://marimiks.github.io/RocketLinks-MaratonaExplorer/">todas as
+                    redes</a></strong>💜</p>
+        <div class="contato-links">
+            <a href="https://github.com/MariMiks" target="_blank"><img src="../../assets/github-icon-light.png" id="git-icon">
+                GitHub: @MariMiks</a>
+            <a href="https://linkedin.com/in/mariana-izumi" target="_blank"><img src="../../assets/linkedin-icon-light.png"
+                    id="linkedin-icon"> LinkedIn: /mariana-izumi</a>
+            <a href="mailto:mariana.izumiks@gmail.com"><img src="../../assets/email-icon-light.png" id="email-icon"> Email:
+                mariana.izumiks@gmail.com</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>Feito com 💜 por MIKS</p>
+    </footer>
+</body>
+
+</html>

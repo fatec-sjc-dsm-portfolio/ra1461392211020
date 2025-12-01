@@ -1,0 +1,62 @@
+/*-------------- SOBRE MIM --------------*/
+.badges .ativo{
+    background: #8c088a;
+    color: white;
+}
+
+
+/*-------------- SEÇÃO DE VOLUNTARIADO --------------*/
+
+.vol-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  margin-top: 10px;
+  align-items: start;
+}
+
+.vol-item {
+  position: relative;
+  overflow: hidden;   
+}
+
+.vol-item img{
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+.vol-item .overlay-text {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0; 
+  transition: opacity 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  color: #f0f0f0;
+  text-align: justify;
+  
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  
+  pointer-events: none;
+}
+
+.vol-item .overlay-text h3{
+  text-align: center;
+}
+
+.vol-item .overlay-text p{
+  margin: 20px;
+}
+
+
+.vol-item:hover .overlay-text {
+  opacity: 1; 
+}

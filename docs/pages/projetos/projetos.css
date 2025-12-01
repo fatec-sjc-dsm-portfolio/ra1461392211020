@@ -1,0 +1,225 @@
+:root{
+  --tipoWeb: #4C6EF5;
+  --tipoMobile: #0CA678;
+  --tipoData: #FF6B6B;
+  --tipoAuto: #F59F00;
+  --tipoDesktop: #845EF7;
+}
+
+body.dark{
+  --tipoWeb: #748FFC;
+  --tipoMobile: #51CF66;
+  --tipoData: #FF8787;
+  --tipoAuto: #FFD43B;
+  --tipoDesktop: #B197FC;
+}
+
+/* ====== TÍTULO ====== */
+#projetos h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.projetos-filtroBusca{
+  display: inline;
+}
+
+/* ====== BARRA DE BUSCA ====== */
+.projetos-search {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.projetos-search input {
+    width: 60%;
+    padding: 12px 16px;
+    border-radius: 12px;
+    border: 1px solid #470046;
+    background: var(--bg);
+    color: var(--text2);
+}
+
+.projetos-search input::placeholder {
+  color: var(--text2);
+}
+
+/* ====== FILTROS ====== */
+.projetos-filtros {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.filtro {
+    padding: 10px 20px;
+    border: none;
+    background: var(--bg);
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .2s;
+}
+
+.filtro.active {
+    background: var(--primary);
+    color: #fff;
+}
+
+/* ====== GRID ====== */
+.projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 28px;
+    margin-top: 20px;
+}
+
+/* ====== CARDS ====== */
+.projeto-card {
+    background: var(--card);
+    border-radius: 20px;
+    box-shadow: var(--bgToggle);
+    overflow: hidden;
+    transition: .3s;
+}
+
+.projeto-card:hover {
+    transform: translateY(-4px);
+}
+
+.projeto-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.projeto-content {
+    padding: 20px;
+    color: var(--textCard);
+}
+
+.projeto-content h3 {
+    margin-bottom: 10px;
+}
+
+.projeto-content p {
+    opacity: .8;
+    margin-bottom: 15px;
+}
+
+/* TAG PRINCIPAL (Tipo) */
+.tag {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-right: 6px;
+    color: white;
+}
+
+/* Tipo Web / Mobile / Data etc */
+.tipo-web {
+    background: #4C6EF5; /* azul */
+}
+
+.tipo-mobile {
+    background: #0CA678; /* verde */
+}
+
+.tipo-data {
+    background: #FF6B6B; /* vermelho */
+}
+
+.tipo-automacao {
+    background: #F59F00; /* amarelo */
+}
+
+.tipo-desktop {
+    background: #845EF7; /* roxo */
+}
+
+/* Badge "Destaque" */
+.tag.destaque {
+    background: #ff8a00;
+}
+
+/* Esconder quando não for destaque */
+.hide {
+    display: none !important;
+}
+
+/* TAGS DE TECNOLOGIA */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 8px 0;
+}
+
+.tags span {
+    background: var(--bg, #e5e5e5);
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 0.70rem;
+    font-weight: 500;
+    color: var(--text);
+}
+
+
+.btn-codigo {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 14px;
+    background: var(--primary);
+    color: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(3px);
+    z-index: 2;
+    padding: 60px 20px; /* margem em cima e embaixo */
+}
+
+.modal-content {
+    background: var(--bg);
+    padding: 30px;
+    max-width: 700px;
+    width: 90%;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    animation: fadeIn .3s ease-in-out;
+
+    max-height: calc(100vh - 160px); /* evita ultrapassar a tela */
+    overflow-y: auto;
+}
+
+.modal-content img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+#modal-close {
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.hide { display: none; }
