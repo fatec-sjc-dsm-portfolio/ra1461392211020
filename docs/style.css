@@ -291,6 +291,7 @@ input:checked + .toggle .sun {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  color: var(--textCard);
 }
 
 .btn-github {
